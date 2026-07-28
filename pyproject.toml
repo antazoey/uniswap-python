@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "uniswap-python"
-version = "0.7.2"  # this is automatically set in CI on tagged releases (before pushed to PyPI)
+version = "0.8.0"  # this is automatically set in CI on tagged releases (before pushed to PyPI)
 description = "An unofficial Python wrapper for the decentralized exchange Uniswap"
 repository = "https://github.com/shanefontaine/uniswap-python"
 readme = "README.md"
@@ -24,7 +24,7 @@ unipy = "uniswap:main"
 
 [tool.poetry.dependencies]
 python = "^3.7.2"
-web3 = { version = "^6.0", allow-prereleases = true }
+web3 = { version = "^6.5.0", allow-prereleases = true }
 click = "^8.0.3"
 python-dotenv = "*"
 typing-extensions = "*"
@@ -32,6 +32,7 @@ typing-extensions = "*"
 [tool.poetry.dev-dependencies]
 mypy = "*"
 black = "*"
+pre-commit = "*"
 pytest = "^6.0"
 pytest-cov = "*"
 pytest-dotenv = "*"
